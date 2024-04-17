@@ -26,7 +26,7 @@ function addItem() {
     if (textInput.value.trim() !== "") {
         let li = document.createElement("li");
         let para = document.createElement("span")
-        para.innerText = `${textInput.value}`;
+        para.innerText = `${textInput.value.trim()}`;
         li.innerHTML = `<button class="xs"><img class="xs-img" src="./images/Xbutton.svg" alt="click"></button>`;
         li.prepend(para)
         let buttonXs = li.querySelector(".xs")
